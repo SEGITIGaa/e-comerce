@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Noto+Sans+Avestan&family=Oswald&family=Poppins&family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Noto+Sans+Avestan&family=Oswald&family=Poppins&family=Roboto+Mono:wght@500&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&family=Stalinist+One&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    background-color: #28104e;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    z-index: -99;
+}
+nav img{
+    width: 20%;
+    position: absolute;
+    top: 1%;
+}
+.login{
+    z-index: 99;
+    display: flex;
+    background: #fefefe;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 150px 10px 0px 0px ;
+}
+.login h1{
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    margin-top: 65%;
+    margin-bottom: 5%;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-top: 10%;
+    gap: 15px;
+    justify-content: center;
+}
+
+.login form input{
+    padding: 3%;
+    margin: 8px;
+    /* border:none; */
+    border: #28104e 3px solid;
+    border-radius: 8px;
+    color: #28104e;
+}
+.login form input ::placeholder{
+    color: #28104e;
+}
+.login form button{
+    padding: 3%;
+    margin: 8px;
+    margin-top: 8%;
+    border-radius: 25px;
+    border: none;
+    background-color: #28104e;
+    color: #deacf5;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    width: 40%;
+
+}
+.login form button:hover{
+    background-color: #6237a0;
+    color: #28104e;
+    font-weight: 700;
+}
+.login h4{
+    font-weight: 600;
+    margin-bottom: 30px ;
+    margin: 9%;
+}
+.login h4 a{
+    text-decoration: none;
+    color: #28104e;
+}
+@media screen and (max-width: 700px){
+    nav img{
+        width: 20%;
+        position: absolute;
+        top: 7%;
+    }
+    .login{
+        top: 35%;
+
+    }
+    .login form{
+        width: 65%;
+        align-items: center;
+    }
+    form input{
+        
+        width: 100%;
+        margin: 120px auto;
+    }
+    
+}
+@media screen and (max-width: 650px){
+    nav{
+        height: 490px;
+    }
+    nav img{
+        width: 40%;
+        position: absolute;
+        top: 10%;
+    }
+    .login{
+        top: 35%;
+        bottom: 20%;
+
+    }
+    .login form{
+        width: 65%;
+        align-items: center;
+    }
+    form input{
+        
+        width: 100%;
+        margin: 120px auto;
+    }
+    
+}
+
+@media screen and (max-width: 450px){
+    nav{
+        height: 490px;
+    }
+    nav img{
+        width: 60%;
+        position: absolute;
+        top: 4%;
+    }
+    .login{
+        top: 35%;
+        bottom: 20%;
+        border-radius: 120px 0px 0px 0px ;
+    }
+    .login form{
+        width: 65%;
+        align-items: center;
+    }
+    form input{
+        
+        width: 100%;
+        margin: 120px auto;
+    }
+    
+}
+@media screen and (max-width: 380px){
+    nav{
+        height: 490px;
+    }
+    nav img{
+        width: 60%;
+        position: absolute;
+        top: 1%;
+    }
+    .login{
+        top: 35%;
+        bottom: 20%;
+        border-radius: 120px 0px 0px 0px ;
+    }
+    .login form{
+        width: 65%;
+        align-items: center;
+    }
+    form input{
+        
+        width: 100%;
+        margin: 120px auto;
+    }
+    
+}

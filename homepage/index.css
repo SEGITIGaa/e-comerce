@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Noto+Sans+Avestan&family=Oswald&family=Poppins&family=Roboto+Mono:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    position: sticky;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    background-color: #28104e;
+}
+.header img{
+    margin-left: 5%;
+    width: 80px;
+}
+.header i{
+    position: absolute;
+    left: 51%;
+    color: #deacf5;
+}
+.header #search{
+    color: #deacf5;
+}
+.header input{
+    position: sticky;
+    left: 50%;
+    height: 45px;
+    width: 40%;
+    color: #deacf5;
+    border: #deacf5 2px solid;
+    padding-left: 50px;
+    border-radius: 30px;
+    background: none;
+}
+.header input::placeholder{
+    color: #deacf5;
+    font-weight: 200;
+    padding-left: 7px;
+}
+.bottom-nav nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 99;
+    background-color: #28104e;
+}
+.bottom-nav nav ul{
+    display: inline-flex;
+    list-style: none;
+    position: absolute;
+    left: 34%;
+    gap: 390%;
+    
+   
+}
+.bottom-nav nav ul li a{
+    color: #fff;
+    text-decoration: none;
+ 
+}
+.bottom-nav nav ul li a:hover{
+    color: #deacf5;
+}
+@media screen and (max-width: 700px){
+    .header input{
+        height: 40px;
+        width: 65%;
+        left: 30%;
+    }
+    .header i{
+        left: 33%;
+    }
+    .bottom-nav nav{
+        width: 90%;
+        margin: 5%;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .bottom-nav nav ul{
+        gap: 150%;
+        left: 30%;
+    }
+    .bottom-nav nav ul li a{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .header input {
+        left: 30%;
+        width: 65%;
+    }
+    .bottom-nav nav ul{
+        left: 26%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .header{
+        height: 95px;
+        position: sticky;
+        box-sizing: border-box;
+    }
+    .header img{
+        position: absolute;
+        top: 12%;
+        width: 20%;
+    }
+    .header i {
+        left: 31%;
+    }
+    .header input{
+        left: 25%;
+    }
+    .bottom-nav nav{
+        width: 90%;
+        margin: 5%;
+        border-radius: 20px 20px 20px 20px;
+    }
+    .bottom-nav nav ul{
+        left: 18%;
+    }
+    .bottom-nav nav ul li a{
+        font-size: 18px;
+        font-weight: 300;
+    }
+} 

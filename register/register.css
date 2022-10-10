@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Noto+Sans+Avestan&family=Oswald&family=Poppins&family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Noto+Sans+Avestan&family=Oswald&family=Poppins&family=Roboto+Mono:wght@500&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&family=Stalinist+One&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: #28104e;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+    width: 100%;
+    z-index: -99;
+}
+nav img{
+    width: 12%;
+    position: absolute;
+    top: 1%;
+}
+nav a{
+    position: absolute;
+    color: #fefefe ;
+    left: 4%;
+    top: 5%;
+}
+nav a:hover{
+    color: #deacf5;
+}
+.reg{
+    z-index: 99;
+    display: flex;
+    background: #fefefe;
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 150px 0px 0px 0px ;
+}
+.reg h1{
+    font-size: 40px;
+    font-weight: 400;
+    position: absolute;
+    top: 18%;
+
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+
+.reg form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-bottom: 2%;
+    margin-top:19%;
+    gap: 12px;
+    /* border: 2px solid ; */
+}
+.reg form input::placeholder{
+    color: #28104e;
+}
+.reg form input{
+    padding: 3%;
+    margin: 8px;
+    border: #28104e 3px solid;
+    border-radius: 8px;
+    color: #28104e; 
+}
+.reg form button{
+    padding: 3%;
+    margin-top: 8%;
+    border-radius: 25px;
+    border: none;
+    align-items: center;
+    background-color: #28104e;
+    color: #deacf5;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    width: 40%;
+    /* margin: auto; */
+}
+.reg form button:hover{
+    background-color: #6237a0;
+    color: #28104e;
+    font-weight: 700;
+}
+.reg h4{
+    font-weight: 600;
+    margin-bottom: 30px ;
+}
+.reg h4 a{
+    text-decoration: none;
+    color: #28104e;
+}
+@media screen and (max-width: 700px){
+    nav img{
+        width: 15%;
+        position: absolute;
+        top: 5%;
+    }
+    .reg h1{
+        top: 13%;
+    }
+    .reg{
+        top: 25%;
+    }
+    .reg form{
+        position: absolute;
+        top: 25%;
+        width: 65%;
+        align-items: center;
+    }
+    form input{
+        
+        width: 100%;
+        margin: 120px auto;
+    }
+    
+}
+@media screen and (max-width: 650px){
+    nav h1{
+        bottom: 20%;
+    }
+    nav a{
+        left: 8%;
+        top: 6%;
+
+    }
+    .reg{
+        top: 25%;
+        bottom: 20%;
+
+    }
+    .reg form{
+        margin-top: 15%;
+        margin-bottom: 5%;
+        width: 65%;
+        align-items: center;
+    }
+    form input{
+        
+        width: 100%;
+        margin: 120px auto;
+    }
+    
+}
+@media screen and (max-width: 450px){
+    nav a{
+        left: 8%;
+        top: 6%;
+
+    }
+    nav img{
+        width: 50%;
+    }
+    .reg{
+        top: 15%;
+        bottom: 20%;
+        border-radius: 120px 0px 0px 0px ;
+    }
+    .reg form{
+        align-items: center;
+    }
+
+}
